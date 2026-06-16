@@ -1,517 +1,1794 @@
 ﻿<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Авто+ | Автосервис в Скоропусковском, Сергиев Посад-14</title>
-    <meta name="description" content="Автосервис Авто+ в Скоропусковском: диагностика, ходовая, тормоза, замена масла, ГРМ, кондиционер, выхлоп, шиномонтаж. Рейтинг 5,0 на Яндекс.Картах, ежедневно 09:00-21:00.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Авто+ — автосервис в Скоропусковском">
-    <meta property="og:description" content="Ремонт и обслуживание легковых авто. Рейтинг 5,0, ежедневно 09:00-21:00, запись по телефону и через форму.">
-    <meta property="og:locale" content="ru_RU">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script type="application/ld+json">
-        {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "Авто+",
-    "telephone": "+7 (916) 370-99-77",
-    "address": {
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автосервис в Сергиевом Посаде без лишних работ: ТО, диагностика, шиномонтаж</title>
+  <meta name="description" content="Автосервис на Пограничной, 9Б: ТО, диагностика, шиномонтаж, замена масла за 1500 ₽, проточка тормозных дисков за 1500 ₽. Рейтинг 4,9.">
+  <link rel="canonical" href="https://rombensonn.github.io/autoservice-sergiev-posad/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Автосервис на Пограничной, 9Б: без лишних работ и с понятными объяснениями">
+  <meta property="og:description" content="ТО, диагностика, шиномонтаж и ремонт авто в Сергиевом Посаде. Рейтинг 4,9, 21 оценка, ежедневно 08:00–20:00.">
+  <meta property="og:url" content="https://rombensonn.github.io/autoservice-sergiev-posad/">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="theme-color" content="#12161c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6f5;
+      --surface: #ffffff;
+      --surface-strong: #12161c;
+      --text: #171a20;
+      --muted: #606773;
+      --line: #d8ded9;
+      --accent: #d94b2b;
+      --accent-dark: #ad341a;
+      --accent-soft: #fff0e8;
+      --green: #20714b;
+      --shadow: 0 18px 44px rgba(18, 22, 28, .1);
+      --radius: 8px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: "Inter";
+      font-size: clamp(16px, 2.4vw, 18px);
+      line-height: 1.55;
+      padding-bottom: 78px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+      font-family: "Inter";
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(244, 246, 245, .96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 68px;
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: clamp(18px, 4.2vw, 22px);
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 12px 16px;
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.15;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      background: var(--accent-dark);
+      box-shadow: 0 12px 26px rgba(217, 75, 43, .24);
+      outline: none;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+      color: var(--text);
+      background: #eef2ef;
+      box-shadow: none;
+    }
+
+    .btn-small {
+      min-height: 44px;
+      padding: 10px 12px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .section {
+      padding: 44px 0;
+      scroll-margin-top: 84px;
+    }
+
+    .section-dark {
+      color: #fff;
+      background: var(--surface-strong);
+    }
+
+    .section-head {
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 9px;
+      margin: 0 0 10px;
+      border-radius: 999px;
+      color: var(--green);
+      background: #e9f4ee;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin-bottom: 16px;
+      font-size: clamp(34px, 9vw, 72px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: clamp(28px, 6vw, 46px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: clamp(20px, 4.2vw, 25px);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(18px, 3.2vw, 23px);
+    }
+
+    .section-dark .lead,
+    .section-dark .muted {
+      color: #cbd2dc;
+    }
+
+    .hero {
+      padding: 44px 0 36px;
+      background:
+        linear-gradient(180deg, rgba(18, 22, 28, .04), rgba(244, 246, 245, 0)),
+        var(--bg);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero-proof {
+      display: grid;
+      gap: 10px;
+      margin: 24px 0 22px;
+    }
+
+    .proof-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .proof-value {
+      display: block;
+      font-size: clamp(23px, 7vw, 36px);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .proof-label {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.3;
+      margin-top: 6px;
+    }
+
+    .price-note {
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      background: var(--accent-soft);
+      color: #3a211a;
+    }
+
+    .price-note strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .service-grid,
+    .fact-grid,
+    .review-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .service-card,
+    .fact-card,
+    .review-card,
+    .contact-panel,
+    .form-panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card,
+    .fact-card,
+    .review-card {
+      padding: 18px;
+    }
+
+    .service-card p,
+    .fact-card p,
+    .review-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .service-price {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      margin-top: 12px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--surface-strong);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .section-cta {
+      margin-top: 20px;
+    }
+
+    .facts-band {
+      background: #e7ede8;
+    }
+
+    .fact-label {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .fact-card h3 {
+      margin-top: 4px;
+    }
+
+    .review-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .review-author {
+      font-weight: 900;
+    }
+
+    .review-meta {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .rating-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .rating-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: #111;
+      background: #ffe9a8;
+      font-weight: 900;
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .contact-panel {
+      padding: 20px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .hours {
+      display: grid;
+      gap: 6px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .map-frame {
+      width: 100%;
+      min-height: 320px;
+      border: 0;
+      border-radius: var(--radius);
+      background: #dbe2de;
+      box-shadow: var(--shadow);
+    }
+
+    .final-cta {
+      padding-bottom: 54px;
+    }
+
+    .form-layout {
+      display: grid;
+      gap: 22px;
+    }
+
+    .form-panel {
+      padding: 20px;
+      color: var(--text);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      min-height: 48px;
+      padding: 11px 12px;
+      border: 1px solid #c9c1b6;
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--text);
+    }
+
+    .field input:focus,
+    .field select:focus {
+      border-color: var(--accent);
+      outline: 3px solid rgba(217, 75, 43, .2);
+    }
+
+    .form-message {
+      min-height: 24px;
+      margin: 12px 0 0;
+      font-weight: 800;
+    }
+
+    .form-message.success {
+      color: var(--green);
+    }
+
+    .form-message.error {
+      color: #b3261e;
+    }
+
+    .microcopy {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .mobile-call {
+      position: fixed;
+      right: 16px;
+      bottom: 14px;
+      left: 16px;
+      z-index: 40;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      color: #fff;
+      font-weight: 900;
+      box-shadow: 0 18px 38px rgba(18, 22, 28, .28);
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (min-width: 360px) and (max-width: 479px) {
+      .hero-proof {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-proof .proof-item:last-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero .btn {
+        width: 100%;
+        margin-bottom: 76px;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .hero-proof,
+      .service-grid,
+      .fact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+
+      .mobile-call {
+        display: none;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .hero {
+        padding: 78px 0 64px;
+      }
+
+      .hero-proof {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .fact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .review-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .contact-grid,
+      .form-layout {
+        grid-template-columns: .9fr 1.1fr;
+        align-items: stretch;
+      }
+
+      .form-panel {
+        padding: 26px;
+      }
+    }
+
+    /* Visual redesign layer */
+    :root {
+      --bg: #0f1214;
+      --surface: #f5f1e9;
+      --surface-strong: #111416;
+      --panel: #1a1f22;
+      --panel-2: #22292d;
+      --text: #f7f1e6;
+      --dark-text: #151719;
+      --muted: #9aa4a8;
+      --muted-warm: #6f6a61;
+      --line: rgba(247, 241, 230, .16);
+      --dark-line: rgba(21, 23, 25, .14);
+      --accent: #e84b2a;
+      --accent-dark: #bd3218;
+      --accent-soft: #341a13;
+      --green: #7ad29c;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .34);
+      --radius: 6px;
+      --max: 1180px;
+    }
+
+    body {
+      color: var(--text);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(232, 75, 42, .16), transparent 28rem),
+        linear-gradient(180deg, #151a1d 0%, #0f1214 34%, #171b1d 100%);
+      font-family: "Inter";
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .22;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(180deg, #000, transparent 82%);
+    }
+
+    .site-header {
+      background: rgba(15, 18, 20, .82);
+      border-bottom: 1px solid rgba(255, 255, 255, .09);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, .22);
+    }
+
+    .header-inner {
+      min-height: 70px;
+    }
+
+    .brand-name {
+      color: var(--text);
+      letter-spacing: 0;
+    }
+
+    .brand-name::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(232, 75, 42, .16);
+      vertical-align: 1px;
+    }
+
+    .btn {
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .22);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, .08);
+      border-color: rgba(255, 255, 255, .18);
+      box-shadow: none;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+      color: #fff;
+      background: rgba(255, 255, 255, .14);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: calc(100svh - 70px);
+      padding: 44px 0 52px;
+      background:
+        linear-gradient(120deg, rgba(17, 20, 22, .98) 0%, rgba(17, 20, 22, .92) 46%, rgba(17, 20, 22, .3) 100%),
+        var(--bg);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -16vw;
+      bottom: -20vw;
+      width: 54vw;
+      height: 54vw;
+      border: 1px solid rgba(232, 75, 42, .28);
+      transform: rotate(18deg);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      text-transform: uppercase;
+      font-size: clamp(34px, 6.2vw, 58px);
+      line-height: .98;
+    }
+
+    .lead {
+      color: #c5cdd0;
+    }
+
+    .eyebrow {
+      min-height: 32px;
+      border: 1px solid rgba(122, 210, 156, .28);
+      color: #a7f0bf;
+      background: rgba(25, 83, 51, .28);
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .hero-proof {
+      max-width: 760px;
+      margin: 30px 0 22px;
+    }
+
+    .proof-item,
+    .service-card,
+    .fact-card,
+    .review-card,
+    .contact-panel,
+    .form-panel {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .055);
+      box-shadow: none;
+      backdrop-filter: blur(12px);
+    }
+
+    .proof-item {
+      position: relative;
+      overflow: hidden;
+      min-height: 96px;
+    }
+
+    .proof-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 38px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .proof-value {
+      color: #fff;
+    }
+
+    .proof-label,
+    .service-card p,
+    .fact-card p,
+    .review-card p {
+      color: #aeb7bb;
+    }
+
+    .hero-media {
+      position: relative;
+      margin: 10px 0 0;
+      min-height: 360px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      background: #050607;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: none;
+    }
+
+    .hero-media::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(180deg, transparent 42%, rgba(0, 0, 0, .84) 100%),
+        linear-gradient(90deg, rgba(232, 75, 42, .22), transparent 40%);
+      pointer-events: none;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+
+    .hero-media figcaption {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      left: 18px;
+      z-index: 2;
+      display: grid;
+      gap: 4px;
+      padding: 14px;
+      border-left: 3px solid var(--accent);
+      color: #fff;
+      background: rgba(12, 14, 15, .72);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-media figcaption span {
+      color: #c7d0d3;
+      font-size: 14px;
+    }
+
+    .section {
+      position: relative;
+      padding: 58px 0;
+    }
+
+    .section:nth-of-type(even) {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
+    }
+
+    h2 {
+      max-width: 900px;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    h3 {
+      color: var(--text);
+    }
+
+    .service-grid,
+    .fact-grid,
+    .review-grid {
+      gap: 14px;
+    }
+
+    .service-card,
+    .fact-card,
+    .review-card {
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .service-card::after,
+    .fact-card::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      width: 82px;
+      height: 82px;
+      border: 1px solid rgba(232, 75, 42, .22);
+      transform: rotate(18deg);
+    }
+
+    .service-price {
+      border-radius: 4px;
+      color: #160c08;
+      background: #ffd3c4;
+    }
+
+    .facts-band {
+      background:
+        linear-gradient(180deg, rgba(232, 75, 42, .08), transparent 48%),
+        #121618;
+    }
+
+    .fact-visual {
+      display: grid;
+      gap: 0;
+      margin: 28px 0 18px;
+      border: 1px solid var(--line);
+      background: #070808;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .fact-visual img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .fact-visual-copy {
+      display: grid;
+      gap: 8px;
+      padding: 20px;
+      border-top: 3px solid var(--accent);
+      background: rgba(255, 255, 255, .055);
+    }
+
+    .fact-visual-copy span,
+    .fact-label,
+    .review-meta {
+      color: #a7f0bf;
+    }
+
+    .fact-visual-copy strong {
+      max-width: 760px;
+      font-size: clamp(22px, 4.6vw, 38px);
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .review-card {
+      background: var(--surface);
+      color: var(--dark-text);
+      border-color: var(--dark-line);
+    }
+
+    .review-card h3,
+    .review-author {
+      color: var(--dark-text);
+    }
+
+    .review-card p {
+      color: #43484b;
+    }
+
+    .rating-pill {
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .contact-panel,
+    .form-panel {
+      background: var(--surface);
+      color: var(--dark-text);
+      border-color: var(--dark-line);
+      backdrop-filter: none;
+    }
+
+    .contact-panel h3,
+    .form-panel h3,
+    .form-panel label {
+      color: var(--dark-text);
+    }
+
+    .contact-list,
+    .hours,
+    .microcopy {
+      color: var(--muted-warm);
+    }
+
+    .map-frame {
+      min-height: 390px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 0;
+      box-shadow: var(--shadow);
+      filter: grayscale(.2) contrast(1.05);
+    }
+
+    .section-dark {
+      background:
+        linear-gradient(120deg, rgba(232, 75, 42, .14), transparent 42%),
+        #0d1011;
+    }
+
+    .field input,
+    .field select {
+      border-radius: 4px;
+      border-color: rgba(21, 23, 25, .22);
+      background: #fffaf1;
+    }
+
+    .mobile-call {
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 4px;
+      background: #111416;
+    }
+
+    @media (max-width: 767px) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+
+      body {
+        background: #101315;
+      }
+
+      body::before {
+        display: none;
+      }
+
+      .site-header {
+        background: rgba(15, 18, 20, .96);
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 32px;
+      }
+
+      .hero .btn {
+        margin-bottom: 20px;
+      }
+
+      .hero::after,
+      .service-card::after,
+      .fact-card::after {
+        display: none;
+      }
+
+      .hero h1,
+      h2 {
+        text-transform: none;
+      }
+
+      .hero-media {
+        min-height: 260px;
+      }
+
+      .hero-media img {
+        min-height: 260px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .fact-visual img {
+        height: 220px;
+      }
+
+      .btn:hover,
+      .btn:focus-visible,
+      .btn-secondary:hover,
+      .btn-secondary:focus-visible {
+        box-shadow: none;
+        transform: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, .95fr) minmax(360px, .85fr);
+      }
+
+      .hero-media {
+        min-height: 520px;
+        clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .hero-media img {
+        min-height: 520px;
+      }
+
+      .fact-visual {
+        grid-template-columns: minmax(0, 1.2fr) minmax(340px, .8fr);
+        align-items: stretch;
+      }
+
+      .fact-visual img {
+        height: 380px;
+      }
+
+      .fact-visual-copy {
+        align-content: end;
+        border-top: 0;
+        border-left: 3px solid var(--accent);
+      }
+
+      .btn,
+      .service-card,
+      .fact-card,
+      .review-card,
+      .contact-panel,
+      .form-panel,
+      .hero-media,
+      .fact-visual {
+        transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease, filter .22s ease;
+      }
+
+      .btn:hover,
+      .btn:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      .service-card:hover,
+      .fact-card:hover,
+      .review-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(232, 75, 42, .42);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, .24);
+      }
+
+      .hero-media:hover,
+      .fact-visual:hover {
+        transform: translateY(-3px);
+        border-color: rgba(232, 75, 42, .46);
+      }
+
+      .hero-media:hover img,
+      .fact-visual:hover img {
+        filter: saturate(1.06) contrast(1.04);
+      }
+    }
+
+    /* Liquid Glass industrial language */
+    body {
+      font-family: "Inter";
+      background:
+        radial-gradient(circle at 16% 8%, rgba(255, 255, 255, .13), transparent 18rem),
+        radial-gradient(circle at 78% 18%, rgba(232, 75, 42, .22), transparent 30rem),
+        linear-gradient(135deg, #080a0b 0%, #131719 48%, #090b0c 100%);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .16;
+      background:
+        linear-gradient(115deg, transparent 0 44%, rgba(255, 255, 255, .16) 45%, transparent 47% 100%),
+        linear-gradient(290deg, transparent 0 55%, rgba(122, 210, 156, .08) 56%, transparent 58% 100%);
+      background-size: 760px 760px, 520px 520px;
+    }
+
+    .site-header,
+    .proof-item,
+    .service-card,
+    .fact-card,
+    .contact-panel,
+    .form-panel,
+    .hero-media figcaption,
+    .fact-visual-copy,
+    .mobile-call,
+    .btn-secondary {
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, .055)),
+        rgba(18, 22, 24, .52);
+      border: 1px solid rgba(255, 255, 255, .24);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .34),
+        inset 0 -1px 0 rgba(255, 255, 255, .06),
+        0 24px 70px rgba(0, 0, 0, .36);
+      backdrop-filter: blur(22px) saturate(1.35);
+      -webkit-backdrop-filter: blur(22px) saturate(1.35);
+    }
+
+    .contact-panel,
+    .form-panel,
+    .review-card {
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .48)),
+        rgba(245, 241, 233, .72);
+      border-color: rgba(255, 255, 255, .58);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .82),
+        inset 0 -1px 0 rgba(255, 255, 255, .22),
+        0 28px 90px rgba(0, 0, 0, .32);
+      backdrop-filter: blur(28px) saturate(1.25);
+      -webkit-backdrop-filter: blur(28px) saturate(1.25);
+    }
+
+    .proof-item::after,
+    .service-card::before,
+    .fact-card::before,
+    .review-card::before,
+    .contact-panel::before,
+    .form-panel::before,
+    .hero-media::after,
+    .fact-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(120deg, rgba(255, 255, 255, .32), transparent 28%),
+        radial-gradient(circle at 18% 10%, rgba(255, 255, 255, .28), transparent 22rem);
+      opacity: .45;
+      mix-blend-mode: screen;
+    }
+
+    .contact-panel,
+    .form-panel,
+    .hero-media,
+    .fact-visual {
+      position: relative;
+    }
+
+    .hero-media {
+      border-radius: 22px;
+      border-color: rgba(255, 255, 255, .26);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, .04)),
+        #050607;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .28),
+        0 36px 110px rgba(0, 0, 0, .48);
+    }
+
+    .hero-media img,
+    .fact-visual img {
+      filter: contrast(1.06) saturate(1.02);
+    }
+
+    .hero-media figcaption {
+      border-radius: 16px;
+      border-left: 1px solid rgba(255, 255, 255, .36);
+    }
+
+    .hero-media figcaption::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 18px;
+      right: 18px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .78), transparent);
+    }
+
+    .service-card,
+    .fact-card,
+    .review-card,
+    .contact-panel,
+    .form-panel,
+    .proof-item,
+    .fact-visual {
+      border-radius: 18px;
+    }
+
+    .service-card h3,
+    .fact-card h3 {
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card p,
+    .fact-card p,
+    .service-price {
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card::after,
+    .fact-card::after {
+      border-color: rgba(255, 255, 255, .18);
+      background: radial-gradient(circle, rgba(232, 75, 42, .2), transparent 70%);
+    }
+
+    .btn {
+      border-radius: 14px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .2), transparent 36%),
+        linear-gradient(135deg, #ff5b38, #d93618);
+      border: 1px solid rgba(255, 255, 255, .22);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .36),
+        0 18px 44px rgba(232, 75, 42, .24);
+    }
+
+    .btn-secondary {
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .06)),
+        rgba(255, 255, 255, .08);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .28),
+        0 18px 44px rgba(0, 0, 0, .18);
+    }
+
+    .fact-visual {
+      border-radius: 24px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .035)),
+        rgba(17, 20, 22, .58);
+      backdrop-filter: blur(18px) saturate(1.25);
+      -webkit-backdrop-filter: blur(18px) saturate(1.25);
+    }
+
+    .fact-visual-copy {
+      border-left-color: rgba(255, 255, 255, .26);
+    }
+
+    .section-dark.final-cta {
+      background:
+        linear-gradient(110deg, rgba(8, 10, 11, .96) 0%, rgba(8, 10, 11, .78) 46%, rgba(8, 10, 11, .92) 100%),
+        url("./images/booking-reception.jpg") center / cover no-repeat;
+    }
+
+    .section-dark.final-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 24% 12%, rgba(255, 255, 255, .16), transparent 18rem),
+        linear-gradient(120deg, transparent 0 58%, rgba(255, 255, 255, .08) 59%, transparent 62% 100%);
+    }
+
+    .field input,
+    .field select {
+      font-family: "Inter";
+      color: var(--dark-text);
+      border-radius: 14px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .78), rgba(255, 255, 255, .48)),
+        rgba(255, 250, 241, .68);
+      border-color: rgba(255, 255, 255, .68);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .88),
+        0 8px 26px rgba(0, 0, 0, .06);
+    }
+
+    @media (max-width: 767px) {
+      body,
+      button,
+      input,
+      select {
+        font-family: "Inter";
+      }
+
+      .site-header,
+      .proof-item,
+      .service-card,
+      .fact-card,
+      .hero-media figcaption,
+      .fact-visual-copy,
+      .mobile-call,
+      .btn-secondary {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      .contact-panel,
+      .form-panel,
+      .review-card {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      .hero-media,
+      .fact-visual,
+      .service-card,
+      .fact-card,
+      .review-card,
+      .contact-panel,
+      .form-panel,
+      .proof-item {
+        border-radius: 14px;
+      }
+
+      .final-cta {
+        padding-bottom: 136px;
+      }
+
+      .form-panel {
+        margin-bottom: 34px;
+        padding-bottom: 92px;
+      }
+
+      .microcopy {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .btn:hover,
+      .btn:focus-visible {
+        filter: brightness(1.06) saturate(1.05);
+      }
+
+      .btn:hover::after,
+      .service-card:hover::before,
+      .fact-card:hover::before,
+      .review-card:hover::before,
+      .hero-media:hover::after,
+      .fact-visual:hover::before {
+        opacity: .78;
+      }
+
+      .field input,
+      .field select {
+        transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      }
+
+      .field input:hover,
+      .field select:hover {
+        transform: translateY(-1px);
+        border-color: rgba(232, 75, 42, .48);
+      }
+    }
+
+    @media (max-width: 767px) {
+      #booking .microcopy {
+        display: none !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Автосервис",
+      "address": {
         "@type": "PostalAddress",
-        "addressLocality": "рабочий посёлок Скоропусковский",
+        "streetAddress": "Пограничная ул., 9Б",
+        "addressLocality": "Сергиев Посад",
         "addressRegion": "Московская область",
-        "streetAddress": "посёлок Сергиев Посад-14"
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 56.376827,
-        "longitude": 38.193858
-    },
-    "openingHoursSpecification": [
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "09:00",
-            "closes": "21:00"
-        }
-    ],
-    "aggregateRating": {
+        "addressCountry": "RU"
+      },
+      "telephone": "+7 966 137-32-28",
+      "url": "https://yandex.ru/maps/-/CPxzJQlx",
+      "hasMap": "https://yandex.ru/maps/-/CPxzJQlx",
+      "openingHours": "Mo-Su 08:00-20:00",
+      "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "ratingCount": "41",
-        "reviewCount": "24"
-    },
-    "url": "https://yandex.ru/maps/-/CPxr4YkE",
-    "paymentAccepted": [
-        "Cash",
-        "BankTransfer"
-    ],
-    "areaServed": "Сергиево-Посадский городской округ"
-}    </script>
+        "ratingValue": "4.9",
+        "ratingCount": "21",
+        "reviewCount": "20"
+      },
+      "priceRange": "Нормочас от 2500 ₽"
+    }
+  </script>
 </head>
 <body>
-    <a class="skip-link" href="#main">Перейти к содержанию</a>
-    <div class="ambient-shell" aria-hidden="true"></div>
-
-    <header class="site-header" aria-label="Верхняя навигация">
-        <div class="container header-inner">
-            <a class="brand" href="#top" aria-label="Авто+ на начало страницы">
-                <span>
-                    <strong>Авто+</strong>
-                    <small>Автосервис</small>
-                </span>
-            </a>
-            <nav class="nav" aria-label="Разделы сайта">
-                <a href="#services">Услуги</a>
-                <a href="#process">Как работаем</a>
-                <a href="#reviews">Отзывы</a>
-                <a href="#contacts">Контакты</a>
-            </nav>
-            <a class="header-phone" href="tel:+79163709977">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.61a2 2 0 0 1-.45 2.11L8 9.72a16 16 0 0 0 6.28 6.28l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.61.62A2 2 0 0 1 22 16.92Z"/></svg>
-                <span>+7 (916) 370-99-77</span>
-            </a>
-        </div>
-    </header>
-
-    <main id="main">
-        <section class="hero section" id="top">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow">Скоропусковский · Сергиев Посад-14 · Ежедневно с 09:00 до 21:00</p>
-                    <h1>Автосервис, где сначала объясняют ремонт, стоимость и сроки</h1>
-                    <p class="hero-lead">Авто+ помогает с диагностикой, ходовой, тормозами, заменой масла, кондиционером, выхлопом, ГРМ и нестандартными задачами по легковым авто.</p>
-                    <div class="hero-actions" aria-label="Основные действия">
-                        <a class="btn btn-primary" href="#booking">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg>
-                            Записаться
-                        </a>
-                        <a class="btn btn-secondary" href="tel:+79163709977">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.61a2 2 0 0 1-.45 2.11L8 9.72a16 16 0 0 0 6.28 6.28l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.61.62A2 2 0 0 1 22 16.92Z"/></svg>
-                            Позвонить
-                        </a>
-                    </div>
-                    <dl class="proof-grid" aria-label="Факты о сервисе">
-                                                    <div>
-                                <dt>5,0</dt>
-                                <dd>рейтинг</dd>
-                            </div>
-                                                    <div>
-                                <dt>41</dt>
-                                <dd>оценка</dd>
-                            </div>
-                                                    <div>
-                                <dt>09:00-21:00</dt>
-                                <dd>ежедневно</dd>
-                            </div>
-                                                    <div>
-                                <dt>24</dt>
-                                <dd>отзыва</dd>
-                            </div>
-                                            </dl>
-                </div>
-
-                <aside class="booking-panel" id="booking" aria-labelledby="booking-title">
-                    <div class="panel-heading">
-                        <p class="eyebrow">Запись без ожидания</p>
-                        <h2 id="booking-title">Давайте разберемся в вашей ситуации</h2>
-                    </div>
-
-                    
-                    <form class="lead-form" action="#booking" method="post" novalidate>
-                        <div class="form-row">
-                            <label for="name">Ваше имя</label>
-                            <input id="name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Например, Алексей">
-                        </div>
-                        <div class="form-row">
-                            <label for="phone">Телефон для связи</label>
-                            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="+7 900 000-00-00" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="car">Автомобиль</label>
-                            <input id="car" name="car" type="text" maxlength="80" placeholder="Марка, модель, год">
-                        </div>
-                        <div class="form-row">
-                            <label for="service">Что нужно сделать</label>
-                            <select id="service" name="service">
-                                <option value="Диагностика">Диагностика</option>
-                                <option value="Ходовая или тормоза">Ходовая или тормоза</option>
-                                <option value="Замена масла / ТО">Замена масла / ТО</option>
-                                <option value="Кондиционер">Кондиционер</option>
-                                <option value="Выхлоп / сварка">Выхлоп / сварка</option>
-                                <option value="ГРМ / форсунки">ГРМ / форсунки</option>
-                                <option value="Шиномонтаж">Шиномонтаж</option>
-                                <option value="Другое">Другое</option>
-                            </select>
-                        </div>
-                        <fieldset class="choice-field">
-                            <legend>Когда удобно</legend>
-                            <label><input type="radio" name="urgency" value="Сегодня" checked> Сегодня</label>
-                            <label><input type="radio" name="urgency" value="В ближайшие дни"> В ближайшие дни</label>
-                            <label><input type="radio" name="urgency" value="Планово"> Планово</label>
-                        </fieldset>
-                        <div class="form-row">
-                            <label for="comment">Комментарий</label>
-                            <textarea id="comment" name="comment" rows="3" maxlength="700" placeholder="Например: появился стук спереди, нужна диагностика"></textarea>
-                        </div>
-                        <input class="honey" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-                        <label class="consent">
-                            <input type="checkbox" name="consent" value="1" required>
-                            <span>Согласен на обработку данных для обратного звонка. <a href="./privacy.html">Политика конфиденциальности</a></span>
-                        </label>
-                        <button class="btn btn-primary btn-wide" type="submit">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
-                            Отправить заявку
-                        </button>
-                        <p class="form-status" aria-live="polite"></p>
-                    </form>
-                </aside>
-            </div>
-        </section>
-
-        <section class="section trust-strip" aria-label="Что сервис согласует перед ремонтом">
-            <div class="container trust-grid">
-                <div class="trust-intro">
-                    <span>До начала работ</span>
-                    <strong>Три точки контроля, чтобы ремонт был понятным</strong>
-                </div>
-                <ul class="trust-points">
-                    <li>
-                        <span>01</span>
-                        <strong>Сначала причина</strong>
-                        <em>диагностика и объяснение, что именно проверяют</em>
-                    </li>
-                    <li>
-                        <span>02</span>
-                        <strong>Потом стоимость</strong>
-                        <em>работы, сроки и запчасти согласуются до ремонта</em>
-                    </li>
-                    <li>
-                        <span>03</span>
-                        <strong>Затем запись</strong>
-                        <em>телефон и форма доступны сразу, особенно с мобильного</em>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section" id="services">
-            <div class="container section-heading">
-                <p class="eyebrow">Сценарии ремонта</p>
-                <h2>Что и в какой ситуации делать?</h2>
-                <p>Найдите похожую ситуацию: так проще понять, с чего начать, что сказать мастеру и какие работы могут понадобиться.</p>
-            </div>
-            <div class="container service-grid">
-                                    <article class="service-card">
-                        <h3>Если нужен плановый сервис</h3>
-                        <p>Подходит, когда машина исправна, но пора обслужить узлы и жидкости.</p>
-                        <ul>
-                                                            <li>замена масла</li>
-                                                            <li>базовое сервисное обслуживание</li>
-                                                            <li>компьютерная диагностика</li>
-                                                            <li>предрейсовый техосмотр</li>
-                                                            <li>запчасти и комплектующие под заказ</li>
-                                                    </ul>
-                    </article>
-                                    <article class="service-card">
-                        <h3>Если стучит, ведёт или скрипит</h3>
-                        <p>Проверка ходовой, тормозов и деталей подвески без лишних догадок.</p>
-                        <ul>
-                                                            <li>ремонт ходовой части</li>
-                                                            <li>ремонт тормозной системы</li>
-                                                            <li>ремонт шаровых опор</li>
-                                                            <li>запрессовка сайлентблоков и ремонт автодеталей</li>
-                                                    </ul>
-                    </article>
-                                    <article class="service-card">
-                        <h3>Если есть проблемы с двигателем</h3>
-                        <p>Диагностика причин и ремонт работ, где важно не ошибиться с источником проблемы.</p>
-                        <ul>
-                                                            <li>замена ГРМ</li>
-                                                            <li>чистка форсунок</li>
-                                                            <li>компьютерная диагностика автомобиля</li>
-                                                            <li>подбор запчастей под заказ</li>
-                                                    </ul>
-                    </article>
-                                    <article class="service-card">
-                        <h3>Если шумит или мешает выхлоп</h3>
-                        <p>Работы по выхлопной системе, креплениям и нестандартным задачам.</p>
-                        <ul>
-                                                            <li>ремонт выхлопной системы</li>
-                                                            <li>удаление катализаторов</li>
-                                                            <li>сварочные работы</li>
-                                                            <li>ремонт и крепление деталей</li>
-                                                    </ul>
-                    </article>
-                                    <article class="service-card">
-                        <h3>Если нужен комфорт и оборудование</h3>
-                        <p>Дополнительные работы, которые проще сделать в одном месте.</p>
-                        <ul>
-                                                            <li>заправка и ремонт автокондиционера</li>
-                                                            <li>установка парктроника</li>
-                                                            <li>установка фаркопа</li>
-                                                            <li>шиномонтаж</li>
-                                                    </ul>
-                    </article>
-                                    <article class="service-card">
-                        <h3>Отдельные задачи</h3>
-                        <p>Сервис работает с легковыми авто и берётся за профильные нестандартные работы.</p>
-                        <ul>
-                                                            <li>ремонт авторефрижераторов</li>
-                                                            <li>ремонт автодеталей</li>
-                                                            <li>замена масла в легковых авто</li>
-                                                    </ul>
-                    </article>
-                            </div>
-        </section>
-
-        <section class="section process" id="process">
-            <div class="container process-grid">
-                <div class="section-heading align-left">
-                    <p class="eyebrow">Как снимаем главные вопросы</p>
-                    <h2>Прозрачный порядок до ремонта</h2>
-                    <a class="text-link" href="#booking">Описать проблему мастеру</a>
-                </div>
-                <ol class="steps">
-                                            <li>
-                            <span class="step-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v6A2.5 2.5 0 0 1 17.5 15H12l-4.5 4v-4h-1A2.5 2.5 0 0 1 4 12.5v-6Z"/><path d="M8 8h8M8 11h5"/></svg>
-                            </span>
-                            <div>
-                                <h3>Описываете проблему</h3>
-                                <p>Звоните или оставляете заявку: марка авто, симптом, срочность и удобное время.</p>
-                            </div>
-                        </li>
-                                            <li>
-                            <span class="step-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24"><path d="M5 8V5h3M16 5h3v3M19 16v3h-3M8 19H5v-3"/><path d="M8 12h8M10 9h4M10 15h4"/></svg>
-                            </span>
-                            <div>
-                                <h3>Мастер уточняет детали</h3>
-                                <p>Если нужно, предлагает диагностику и объясняет, что проверят в первую очередь.</p>
-                            </div>
-                        </li>
-                                            <li>
-                            <span class="step-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17l3 3 5.7-5.7a4 4 0 0 0 5-5l-2.6 2.6-3-3 2.6-2.6Z"/></svg>
-                            </span>
-                            <div>
-                                <h3>Согласовываете работы</h3>
-                                <p>Стоимость, сроки и запчасти обсуждаются до начала ремонта, чтобы не было сюрпризов.</p>
-                            </div>
-                        </li>
-                                            <li>
-                            <span class="step-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24"><path d="M20 7 10 17l-5-5"/><path d="M12 3a9 9 0 1 1-8.4 5.7"/></svg>
-                            </span>
-                            <div>
-                                <h3>Получаете понятный результат</h3>
-                                <p>После работ можно оплатить наличными или банковским переводом.</p>
-                            </div>
-                        </li>
-                                    </ol>
-            </div>
-        </section>
-
-        <section class="section reviews" id="reviews">
-            <div class="container section-heading">
-                <p class="eyebrow">Отзывы клиентов</p>
-                <h2>Что говорят о нас наши клиенты</h2>
-                <p>В отзывах чаще всего отмечают быстрый приём, понятные объяснения, аккуратную работу и адекватную стоимость.</p>
-            </div>
-            <div class="container review-grid">
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Позвонили и в этот же день назначили время и взяли машину на ремонт, цена-качество соответствует. Всё делают на совесть, всё подскажут, расскажут.</blockquote>
-                        <figcaption>
-                            <strong>Nastya B.</strong>
-                            <span>15 октября 2025</span>
-                        </figcaption>
-                    </figure>
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Сделали все для правильной диагностики, присылали видео манипуляций и всегда были на связи. Ребята очень толковые, рекомендую.</blockquote>
-                        <figcaption>
-                            <strong>Дарья Фадеева</strong>
-                            <span>23 апреля</span>
-                        </figcaption>
-                    </figure>
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Все супер, делал ходовую, меняю масло, заправляю кондиционер. Все покажут и расскажут и сделают.</blockquote>
-                        <figcaption>
-                            <strong>Валерий Никитченко</strong>
-                            <span>17 мая 2025</span>
-                        </figcaption>
-                    </figure>
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Помогли отремонтировать сложный немецкий автомобиль. Изготовили спец ключ, чтоб открутить и закрутить демпфер на современном BMW.</blockquote>
-                        <figcaption>
-                            <strong>Кирилл Ткачев</strong>
-                            <span>17 мая 2025</span>
-                        </figcaption>
-                    </figure>
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Быстро, качественно, дёшево по сравнению с другими местами. Всем советую обращаться в этот сервис.</blockquote>
-                        <figcaption>
-                            <strong>Левон Навасардян</strong>
-                            <span>11 апреля</span>
-                        </figcaption>
-                    </figure>
-                                    <figure class="review-card">
-                        <div class="stars" aria-label="Положительный отзыв">
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L10 1.5Z"/></svg>
-                        </div>
-                        <blockquote>Делают всё качественно и по доступным ценам. Всё объясняют доступным языком, если вы не понимаете в машинах.</blockquote>
-                        <figcaption>
-                            <strong>Дмитрий Логинов</strong>
-                            <span>2 ноября 2024</span>
-                        </figcaption>
-                    </figure>
-                            </div>
-            <div class="container centered-cta">
-                <a class="btn btn-secondary" href="https://yandex.ru/maps/-/CPxr4YkE" target="_blank" rel="noopener">Открыть на Яндекс Картах</a>
-            </div>
-        </section>
-
-        <section class="section faq" aria-labelledby="faq-title">
-            <div class="container section-heading">
-                <p class="eyebrow">Коротко о важном</p>
-                <h2 id="faq-title">Вопросы перед записью</h2>
-            </div>
-            <div class="container faq-list">
-                                    <details>
-                        <summary>Можно ли узнать цену до ремонта?</summary>
-                        <p>Да. На сайте не указаны выдуманные цены, потому что итог зависит от модели, состояния узла и запчастей. Оставьте симптом в заявке: мастер уточнит ориентир и согласует работы до начала ремонта.</p>
-                    </details>
-                                    <details>
-                        <summary>Работаете ли по выходным?</summary>
-                        <p>Да, сервис открыт каждый день с 09:00 до 21:00.</p>
-                    </details>
-                                    <details>
-                        <summary>С какими автомобилями работает сервис?</summary>
-                        <p>В карточке указаны легковые автомобили. Для нестандартной задачи лучше коротко описать проблему в заявке или позвонить.</p>
-                    </details>
-                                    <details>
-                        <summary>Можно ли заказать запчасти?</summary>
-                        <p>Да, в услугах указаны запчасти и комплектующие под заказ.</p>
-                    </details>
-                                    <details>
-                        <summary>Как можно оплатить?</summary>
-                        <p>Доступна оплата наличными и банковским переводом.</p>
-                    </details>
-                                    <details>
-                        <summary>Можно ли приехать с животным?</summary>
-                        <p>Да, в особенностях указано, что посещение разрешено со всеми животными.</p>
-                    </details>
-                            </div>
-        </section>
-
-        <section class="section contacts" id="contacts">
-            <div class="container contacts-grid">
-                <div class="contact-card">
-                    <p class="eyebrow">Контакты</p>
-                    <h2>Авто+ в Скоропусковском</h2>
-                    <dl class="contact-list">
-                        <div>
-                            <dt>Телефон</dt>
-                            <dd><a href="tel:+79163709977">+7 (916) 370-99-77</a></dd>
-                        </div>
-                        <div>
-                            <dt>Адрес</dt>
-                            <dd>Московская область, Сергиево-Посадский городской округ, рабочий посёлок Скоропусковский, посёлок Сергиев Посад-14</dd>
-                        </div>
-                        <div>
-                            <dt>График</dt>
-                            <dd>Ежедневно с 09:00 до 21:00</dd>
-                        </div>
-                        <div>
-                            <dt>Оплата</dt>
-                            <dd>наличные, банковский перевод</dd>
-                        </div>
-                    </dl>
-                    <div class="contact-actions">
-                        <a class="btn btn-primary" href="tel:+79163709977">Позвонить</a>
-                        <a class="btn btn-secondary" href="https://yandex.ru/maps/-/CPxr4YkE" target="_blank" rel="noopener">Построить маршрут</a>
-                    </div>
-                </div>
-                <div class="map-wrap" aria-label="Карта расположения Авто+">
-                    <a class="map-fallback" href="https://yandex.ru/maps/-/CPxr4YkE" target="_blank" rel="noopener">
-                        <strong>Открыть Авто+ на Яндекс.Картах</strong>
-                        <span>Московская область, Сергиево-Посадский городской округ, рабочий посёлок Скоропусковский, посёлок Сергиев Посад-14</span>
-                    </a>
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.193858%2C56.376827&amp;mode=search&amp;oid=167443148786&amp;ol=biz&amp;z=16" title="Авто+ на карте" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© 2026 Авто+. Автосервис в Сергиево-Посадском городском округе.</p>
-            <a href="./privacy.html">Политика конфиденциальности</a>
-        </div>
-    </footer>
-
-    <div class="mobile-cta" aria-label="Быстрые действия">
-        <a href="tel:+79163709977">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.62 2.61a2 2 0 0 1-.45 2.11L8 9.72a16 16 0 0 0 6.28 6.28l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.61.62A2 2 0 0 1 22 16.92Z"/></svg>
-            Позвонить
-        </a>
-        <a href="#booking">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg>
-            Записаться
-        </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Автосервис, начало страницы">
+        <span class="brand-name">Автосервис</span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn-secondary btn-small" href="tel:+79661373228">Позвонить</a>
+        <a class="btn btn-small" href="#booking">Запись</a>
+      </div>
     </div>
+  </header>
 
-    <script src="./js/site.js" defer></script>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Рейтинг 4,9, 21 оценка, каждый день 08:00–20:00</p>
+          <h1 id="hero-title">Не навязываем лишний ремонт и объясняем простым языком</h1>
+          <p class="lead">Работаем на Пограничной, 9Б в Сергиевом Посаде: делаем ТО, диагностику, шиномонтаж, замену масла за 1500 ₽ и проточку тормозных дисков за 1500 ₽.</p>
+          <div class="hero-proof" aria-label="Факты для быстрого решения">
+            <div class="proof-item">
+              <span class="proof-value">4,9</span>
+              <span class="proof-label">оценка клиентов</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-value">08–20</span>
+              <span class="proof-label">работаем каждый день</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-value">1 500 ₽</span>
+              <span class="proof-label">цена замены масла и проточки дисков</span>
+            </div>
+          </div>
+          <a class="btn" href="#booking">Записаться на ремонт или диагностику</a>
+        </div>
+        <figure class="hero-media">
+          <img src="./images/service-detail.jpg" alt="Мастер осматривает автомобиль на подъёмнике в автосервисе" width="1400" height="800" loading="eager">
+          <figcaption>
+            <strong>Осмотр на подъёмнике</strong>
+            <span>Показываем, что нашли, и согласуем работу до ремонта.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Работы по машине</p>
+          <h2 id="services-title">Закрываем ТО, диагностику, шиномонтаж и ремонт основных узлов</h2>
+          <p class="lead">Берёмся за регулярное обслуживание, диагностику и ремонт узлов, с которыми чаще всего приезжают в сервис.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Меняем масло в легковых и грузовых авто</h3>
+            <p>Проводим плановое обслуживание двигателя с понятной ценой.</p>
+            <span class="service-price">1500 ₽</span>
+          </article>
+          <article class="service-card">
+            <h3>Протачиваем тормозные диски</h3>
+            <p>Берёмся за работу, когда тормозным дискам нужна обработка.</p>
+            <span class="service-price">1500 ₽</span>
+          </article>
+          <article class="service-card">
+            <h3>Проверяем авто компьютерной диагностикой</h3>
+            <p>Помогаем сузить причину неисправности до ремонта.</p>
+          </article>
+          <article class="service-card">
+            <h3>Ремонтируем ходовую часть, рычаги и шаровые опоры</h3>
+            <p>Ремонтируем подвеску и связанные узлы, которые влияют на управляемость.</p>
+          </article>
+          <article class="service-card">
+            <h3>Работаем с тормозной системой</h3>
+            <p>Проверяем, ремонтируем и восстанавливаем детали тормозной системы.</p>
+          </article>
+          <article class="service-card">
+            <h3>Делаем шиномонтаж, балансировку и вулканизацию</h3>
+            <p>Также выполняем грузовой шиномонтаж и принимаем шины на хранение.</p>
+          </article>
+          <article class="service-card">
+            <h3>Ищем проблемы в системе охлаждения</h3>
+            <p>Разбираемся с охлаждением и случаями, когда уходит антифриз.</p>
+          </article>
+          <article class="service-card">
+            <h3>Берёмся за ГРМ, сцепление и выхлоп</h3>
+            <p>Выполняем замену ГРМ, ремонт сцепления и ремонт выхлопной системы.</p>
+          </article>
+          <article class="service-card">
+            <h3>Заказываем запчасти и комплектующие</h3>
+            <p>Подбираем детали, когда нужная запчасть становится понятна после осмотра на месте.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a class="btn" href="#booking">Выбрать работу и оставить телефон</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facts-band" id="facts" aria-labelledby="facts-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Доказательства</p>
+          <h2 id="facts-title">Подтверждаем доверие фактами: рейтинг 4,9, 20 отзывов и работа каждый день</h2>
+          <p class="lead">Показываем конкретные вещи, которые важны перед записью: график, оплату, типы автомобилей и условия на месте.</p>
+        </div>
+        <div class="fact-visual">
+          <img src="./images/workshop-hero.jpg" alt="Шиномонтажное оборудование и колесо в рабочей зоне автосервиса" width="1400" height="800" loading="lazy">
+          <div class="fact-visual-copy">
+            <span>Рабочая зона</span>
+            <strong>Не прячем процесс: машину смотрим, объясняем и только потом берёмся за работу.</strong>
+          </div>
+        </div>
+        <div class="fact-grid">
+          <article class="fact-card">
+            <span class="fact-label">Рейтинг</span>
+            <h3>Показываем рейтинг 4,9, 21 оценку и 20 отзывов</h3>
+            <p>Даём опереться не только на обещания, но и на оценки клиентов.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Запись</span>
+            <h3>Записываем на удобное время, включая выходные</h3>
+            <p>Ставим в график заранее, чтобы вы не тратили время на ожидание.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Автомобили</span>
+            <h3>Берём легковые, грузовые и коммерческие автомобили</h3>
+            <p>Работаем с отечественными, европейскими, японскими и корейскими авто.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Оплата</span>
+            <h3>Принимаем оплату картой, наличными и безналично</h3>
+            <p>Работаем с предоплатой и постоплатой.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">На месте</span>
+            <h3>Предоставляем парковку, Wi-Fi и туалет</h3>
+            <p>Создаём условия, чтобы спокойно дождаться работ или быстро решить вопрос на месте.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Оснащение</span>
+            <h3>Даём гарантию, делаем эндоскопию, антикор и проверку толщиномером</h3>
+            <p>Также выполняем сварочные работы и ремонт коммерческого транспорта.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a class="btn" href="tel:+79661373228">Уточнить работу по телефону</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Голос клиентов</p>
+          <h2 id="reviews-title">Клиенты отмечают три вещи: не накручиваем, объясняем понятно, работаем аккуратно</h2>
+          <div class="rating-line">
+            <span class="rating-pill">4,9</span>
+            <span>21 оценка и 20 отзывов клиентов</span>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Константин</span>
+              <span class="review-meta">24 мая</span>
+            </div>
+            <p>Ответственные ребята, не разводят на деньги. Заехал на повторную диагностику передней подвески после другого сервиса. Список работ и необходимых запчастей значительно сократился.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Юлия</span>
+              <span class="review-meta">21 мая</span>
+            </div>
+            <p>Грамотные позитивные ребята всё объяснили человеческим языком, без этих страшных терминов. Цены приятные.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Матвей Аглов</span>
+              <span class="review-meta">21 мая</span>
+            </div>
+            <p>Делал замену масла и проточку дисков. Цены соответствуют заявленным на сайте, мастера - профи своего дела. Всё сделали хорошо и быстро.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Илья Сидоров</span>
+              <span class="review-meta">24 мая</span>
+            </div>
+            <p>Обслуживаю свой автомобиль у ребят, делают аккуратно, нравится что можно записаться на удобное время, в том числе и в выходные.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Ирина Якушина</span>
+              <span class="review-meta">21 мая</span>
+            </div>
+            <p>Обслуживание быстрое, сотрудники отзывчивые, всегда объяснят, что нужно делать с машиной. Ремонт по адекватным ценам.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-author">Сергей Габов</span>
+              <span class="review-meta">24 мая</span>
+            </div>
+            <p>Ремонт и ТО делаю всегда в данном автосервисе. Нравится, что у них свои запчасти в наличии или под заказ. Без навязывания и накрутки цен.</p>
+          </article>
+        </div>
+        <div class="section-cta">
+          <a class="btn" href="#booking">Перейти к записи</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Адрес и режим</p>
+          <h2 id="contacts-title">Ждём на Пограничной, 9Б в любой день с 08:00 до 20:00</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <h3>Находимся в Сергиевом Посаде на Пограничной ул., 9Б</h3>
+            <ul class="contact-list">
+              <li><strong>Телефон для записи:</strong> <a href="tel:+79661373228">+7 (966) 137-32-28</a></li>
+              <li><strong>Город:</strong> Сергиев Посад, Московская область</li>
+              <li><strong>Маршрут:</strong> <a href="https://yandex.ru/maps/-/CPxzJQlx" target="_blank" rel="noopener">открыть карту</a></li>
+            </ul>
+            <div class="hours" aria-label="Режим работы">
+              <strong>Сервис работает ежедневно</strong>
+              <span>Понедельник: 08:00–20:00</span>
+              <span>Вторник: 08:00–20:00</span>
+              <span>Среда: 08:00–20:00</span>
+              <span>Четверг: 08:00–20:00</span>
+              <span>Пятница: 08:00–20:00</span>
+              <span>Суббота: 08:00–20:00</span>
+              <span>Воскресенье: 08:00–20:00</span>
+            </div>
+            <div class="section-cta">
+              <a class="btn" href="tel:+79661373228">Позвонить и уточнить время</a>
+            </div>
+          </div>
+          <iframe
+            class="map-frame"
+            title="Карта: Автосервис, Сергиев Посад, Пограничная ул., 9Б"
+            src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B5%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%20%D0%9F%D0%BE%D1%81%D0%B0%D0%B4%2C%20%D0%9F%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209%D0%91&z=16"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark final-cta" id="booking" aria-labelledby="booking-title">
+      <div class="container form-layout">
+        <div>
+          <p class="eyebrow">Запись</p>
+          <h2 id="booking-title">Записываем по имени, телефону и нужной услуге</h2>
+          <p class="lead">Выберите работу из списка. Если не уверены, что именно нужно машине, оставьте телефон — сориентируем по записи.</p>
+        </div>
+        <form class="form-panel" id="bookingForm" action="send.php" method="post" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Как к вам обращаться</label>
+              <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон для связи</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="field">
+              <label for="service">Что нужно сделать</label>
+              <select id="service" name="service" required>
+                <option value="">Выберите работу</option>
+                <option>Замена масла</option>
+                <option>Проточка тормозных дисков</option>
+                <option>Компьютерная диагностика</option>
+                <option>Ремонт ходовой части</option>
+                <option>Ремонт тормозной системы</option>
+                <option>Шиномонтаж и балансировка</option>
+                <option>Ремонт системы охлаждения</option>
+                <option>Замена ГРМ и ремонт сцепления</option>
+                <option>Запчасти и комплектующие под заказ</option>
+              </select>
+            </div>
+            <input type="text" name="website" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn" type="submit">Отправить заявку на запись</button>
+          </div>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+          <p class="microcopy">Без длинной анкеты: только имя, телефон и выбранная работа.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="mobile-call" href="tel:+79661373228">Позвонить в автосервис</a>
+
+  <script>
+    const form = document.querySelector('#bookingForm');
+    const message = document.querySelector('#formMessage');
+    const phoneInput = document.querySelector('#phone');
+
+    function setMessage(text, type) {
+      message.textContent = text;
+      message.className = 'form-message ' + (type || '');
+    }
+
+    function normalizePhone(value) {
+      return value.replace(/[^\d+]/g, '');
+    }
+
+    phoneInput.addEventListener('input', () => {
+      phoneInput.setCustomValidity('');
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      setMessage('', '');
+
+      const formData = new FormData(form);
+      const name = String(formData.get('name') || '').trim();
+      const phone = normalizePhone(String(formData.get('phone') || ''));
+      const service = String(formData.get('service') || '').trim();
+
+      if (name.length < 2) {
+        setMessage('Напишите имя: минимум 2 символа.', 'error');
+        form.name.focus();
+        return;
+      }
+
+      if (!/^(\+7|7|8)\d{10}$/.test(phone)) {
+        setMessage('Введите российский номер телефона.', 'error');
+        form.phone.focus();
+        return;
+      }
+
+      if (!service) {
+        setMessage('Выберите работу из списка.', 'error');
+        form.service.focus();
+        return;
+      }
+
+      formData.set('name', name);
+      formData.set('phone', phone);
+      formData.set('service', service);
+      setMessage('Отправляем заявку.', '');
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Заявка не отправилась.');
+        }
+
+        form.reset();
+        setMessage(result.message || 'Заявка отправлена. Ждите звонка по указанному номеру.', 'success');
+      } catch (error) {
+        setMessage(error.message || 'Заявка не отправилась. Позвоните: +7 (966) 137-32-28.', 'error');
+      }
+    });
+  </script>
 </body>
 </html>
